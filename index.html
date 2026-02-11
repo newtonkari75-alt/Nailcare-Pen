@@ -425,14 +425,7 @@
 
     </main>
 
-    <!-- Floating Checkout (Mobile) - CHANGED: Scrolls to Country Selector -->
-    <div class="fixed bottom-0 left-0 right-0 glass border-t border-slate-100 p-4 z-50 md:hidden flex items-center justify-between gap-4">
-        <div class="flex flex-col text-left">
-            <span class="text-[8px] text-slate-400 font-bold uppercase tracking-tighter line-through leading-none" x-text="i18n[lang].uvp"></span>
-            <span class="text-xl font-black text-[#24AA2F]" x-text="i18n[lang].priceUnit"></span>
-        </div>
-        <button @click="document.getElementById('country-selector').scrollIntoView({behavior: 'smooth'})" class="flex-1 bg-[#24AA2F] text-white py-3.5 rounded-xl font-black text-xs uppercase tracking-widest text-center shadow-lg active:scale-95 animate-pulse-soft" x-text="i18n[lang].secureOffer"></button>
-    </div>
+    <!-- Floating Checkout removed -->
 
     <!-- Footer -->
     <footer class="bg-white py-16 px-6 border-t border-slate-100">
