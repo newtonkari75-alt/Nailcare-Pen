@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     
-    <!-- UPDATED SEO CANONICAL URL -->
+    <!-- SEO CANONICAL & HREFLANG TAGS -->
     <link rel="canonical" href="https://orivelle.vercel.app/" />
+    <link rel="alternate" hreflang="en-US" href="https://orivelle.vercel.app/" />
+    <link rel="alternate" hreflang="en-GB" href="https://orivelle.vercel.app/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://orivelle.vercel.app/" />
+    <link rel="alternate" hreflang="no-NO" href="https://orivelle.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://orivelle.vercel.app/" />
     
     <title>Orivelle Anti-Fungal Pen - Targeted Nail Care | 70% OFF</title>
     <meta name="description" content="Orivelle Anti-Fungal Pen supports nail hygiene and appearance. Targeted care with the Orivelle Pen. Save 70% now." />
@@ -72,10 +77,12 @@
         lang: 'en',
         i18n: {
             en: {
-                link: 'https://orf5f.doctorthetran.com/l',
+                link: 'https://d1m7v.doctorthetran.com/l',
                 selectCountry: 'Select your country to continue',
                 countryFrance: 'France',
                 countryNorway: 'Norway',
+                countryUS: 'United States',
+                countryUK: 'United Kingdom',
                 banner: 'FLASH SALE: 70% OFF + FREE SHIPPING TODAY',
                 benefits: 'Benefits',
                 faq: 'FAQ',
@@ -121,6 +128,8 @@
                 selectCountry: 'Sélectionnez votre pays pour continuer',
                 countryFrance: 'France',
                 countryNorway: 'Norvège',
+                countryUS: 'États-Unis',
+                countryUK: 'Royaume-Uni',
                 banner: 'VENTE FLASH : 70% DE RÉDUCTION + LIVRAISON GRATUITE AUJOURD\'HUI',
                 benefits: 'Avantages',
                 faq: 'FAQ',
@@ -162,10 +171,12 @@
                 txtPrivacy: 'Nous respectons votre vie privée. Vos données sont utilisées uniquement pour traiter votre commande. Conforme au RGPD.'
             },
             no: {
-                link: 'https://ugf2w.doctormvp2.com/l',
+                link: 'https://251ll.doctorelamlaki.com/l',
                 selectCountry: 'Velg ditt land for å fortsette',
                 countryFrance: 'Frankrike',
                 countryNorway: 'Norge',
+                countryUS: 'USA',
+                countryUK: 'Storbritannia',
                 banner: 'FLASH-SALG: 70% RABATT + GRATIS FRAKT I DAG',
                 benefits: 'Fordeler',
                 faq: 'FAQ',
@@ -239,7 +250,7 @@
         const browserLang = navigator.language || navigator.userLanguage;
         if (browserLang.startsWith('fr')) lang = 'fr';
         else if (browserLang.startsWith('no') || browserLang.startsWith('nb') || browserLang.startsWith('nn')) lang = 'no';
-        else lang = 'en';
+        else lang = 'en'; // Defaults to English for US, UK, and others
         
         setInterval(() => { currentSlide = (currentSlide + 1) % slides.length }, 4000)
       ">
@@ -365,9 +376,19 @@
                     <span class="text-lg font-bold text-slate-800 group-hover:text-[#24AA2F] transition-colors" x-text="i18n[lang].countryFrance"></span>
                 </a>
 
-                <a href="https://ugf2w.doctormvp2.com/l" class="group bg-white p-6 rounded-2xl border-2 border-slate-100 hover:border-[#24AA2F] transition-all hover:shadow-lg flex items-center justify-center gap-4">
+                <a href="https://251ll.doctorelamlaki.com/l" class="group bg-white p-6 rounded-2xl border-2 border-slate-100 hover:border-[#24AA2F] transition-all hover:shadow-lg flex items-center justify-center gap-4">
                     <img src="https://flagcdn.com/w160/no.png" alt="Norway Flag" class="w-12 h-auto rounded shadow-sm">
                     <span class="text-lg font-bold text-slate-800 group-hover:text-[#24AA2F] transition-colors" x-text="i18n[lang].countryNorway"></span>
+                </a>
+
+                <a href="https://d1m7v.doctorthetran.com/l" class="group bg-white p-6 rounded-2xl border-2 border-slate-100 hover:border-[#24AA2F] transition-all hover:shadow-lg flex items-center justify-center gap-4">
+                    <img src="https://flagcdn.com/w160/us.png" alt="USA Flag" class="w-12 h-auto rounded shadow-sm">
+                    <span class="text-lg font-bold text-slate-800 group-hover:text-[#24AA2F] transition-colors" x-text="i18n[lang].countryUS"></span>
+                </a>
+
+                <a href="https://68ndt.doctorbuyer.com/l" class="group bg-white p-6 rounded-2xl border-2 border-slate-100 hover:border-[#24AA2F] transition-all hover:shadow-lg flex items-center justify-center gap-4">
+                    <img src="https://flagcdn.com/w160/gb.png" alt="UK Flag" class="w-12 h-auto rounded shadow-sm">
+                    <span class="text-lg font-bold text-slate-800 group-hover:text-[#24AA2F] transition-colors" x-text="i18n[lang].countryUK"></span>
                 </a>
             </div>
         </section>
